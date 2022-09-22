@@ -9,7 +9,7 @@ const Product = ({ name, desc, img, link }) => {
         <p className="p-desc">{desc}</p>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={require(`../../img/${img}`).default} alt="" className="p-img" />
+        <img src={img} alt="" className="p-img" />
       </a>
     </div>
   );

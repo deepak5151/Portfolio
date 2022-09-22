@@ -1,8 +1,12 @@
 import "./productList.css";
 import Product from "../product/Product";
 import { products } from "../../data";
+import Chatify from '../../img/chatify-app.jpg';
+import NewsFeed from '../../img/newsfeed.jpg';
+import MyPlantsTalk from '../../img/myplantstalk.jpg';
 
 const ProductList = () => {
+  const images = [Chatify, NewsFeed, MyPlantsTalk];
   return (
     <div className="pl">
       <div className="pl-texts">
@@ -12,8 +16,8 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        {products.map((item) => (
-          <Product key={item.id} desc={item.desc} name={item.name} img={item.img} link={item.link} />
+        {products.map((item, index) => (
+          <Product key={item.id} desc={item.desc} name={item.name} img={images[index]} link={item.link} />
         ))}
       </div>
     </div>
