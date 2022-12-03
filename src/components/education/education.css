@@ -56,6 +56,7 @@
   align-items: center;
   position: sticky;
   z-index: 2;
+  height:45px;
 }
 .e-name {
   margin-left: 5px;
@@ -64,12 +65,13 @@
 }
 .e-desc-section{
   display: flex;
-  height: -webkit-fill-available;
+  height: 230px;
 }
 .e-desc{
   width:50%;
   text-align: left;
   padding: 10px;
+  font-size: 13px;
 }
 .e-desc-img{
   width:50%;
